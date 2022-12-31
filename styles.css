@@ -1,0 +1,165 @@
+/*-------------------------------- RESET -----------------------------------*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/*---------------------- END RESET -----------------------*/
+
+/*------------------- To work with rem more easy---------------------*/
+
+:root {
+    font-size: 62.5%;
+  }
+  
+/*------------------------------------------------------------------*/
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg);
+}
+
+.card {
+    max-width: 300px;
+    padding: 2.2rem;
+    background-color: var(--card-bg);
+}
+
+.card__body {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--soft-blue);
+}.card__title {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.card__footer {
+    display: flex;
+}
+
+.img__footer {
+    width: 35px;
+}
+
+.card__image {}
+
+.card__img-ethereum{}
+
+.card__offer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.card__price {
+    color: var(--cyan);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.4rem;
+}
+
+.card__body {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--soft-blue);
+}
+
+.card__title {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.card__days {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--soft-blue);
+}
+
+.card__footer {
+    display: flex;
+}
+
+.img__footer {
+    width: 35px;
+}
+
+.card__footer-text-1{
+    
+}
+
+.card__footer-text-2{
+    
+}
