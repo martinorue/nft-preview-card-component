@@ -81,6 +81,10 @@ body {
     max-width: 300px;
     padding: 2.2rem;
     background-color: var(--card-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
 }
 
 .card__body {
@@ -100,7 +104,9 @@ body {
     width: 35px;
 }
 
-.card__image {}
+.card__image {
+    border-radius: 7px;
+}
 
 .card__img-ethereum{}
 
@@ -109,6 +115,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--line);
+    padding-bottom: 10px;
 }
 
 .attribution {
@@ -129,7 +136,7 @@ body {
 }
 
 .card__body {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 300;
     color: var(--soft-blue);
 }
@@ -150,16 +157,22 @@ body {
 
 .card__footer {
     display: flex;
+    font-size: 1.4rem;
+    align-items: center;
 }
 
 .img__footer {
     width: 35px;
+    margin-right: 10px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
 }
 
 .card__footer-text-1{
-    
+    color: var(--soft-blue);
+    margin-right: 5px;
 }
 
 .card__footer-text-2{
-    
+    color: var(--white);
 }
