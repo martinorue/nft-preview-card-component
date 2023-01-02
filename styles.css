@@ -99,13 +99,13 @@ body {
     width: 35px;
 }
 
-.card__image__container {
+.image-container {
     border-radius: 7px;
     position: relative;
     width: 100%;
 }
 
-.card__offer {
+.offer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,7 +122,7 @@ body {
     color: rgb(62, 82, 163);
 }
 
-.card__price {
+.offer__price {
     color: var(--cyan);
     display: flex;
     align-items: center;
@@ -145,7 +145,7 @@ body {
     color: var(--cyan);
 }
 
-.card__days {
+.offer__days {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -154,30 +154,30 @@ body {
     color: var(--soft-blue);
 }
 
-.card__footer {
+.footer {
     display: flex;
     font-size: 1.4rem;
     align-items: center;
     padding-top: 7px;
 }
 
-.img__footer {
+.footer__img {
     width: 35px;
     margin-right: 10px;
     border: 1px solid var(--white);
     border-radius: 20px;
 }
 
-.card__footer-text-1 {
+.footer__text-1 {
     color: var(--soft-blue);
     margin-right: 5px;
 }
 
-.card__footer-text-2 {
+.footer__text-2 {
     color: var(--white);
 }
 
-.card__footer-text-2:hover {
+.footer__text-2:hover {
     color: var(--cyan);
 }
 
@@ -194,11 +194,11 @@ body {
     background-color: #008CBA;
   }
   
-  .card__image__container:hover .overlay {
+  .image-container:hover .overlay {
     opacity: 0.6;
   }
 
-.card__hover__image {
+.overlay__image {
     color: white;
     font-size: 20px;
     position: absolute;
