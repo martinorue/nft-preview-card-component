@@ -99,11 +99,11 @@ body {
     width: 35px;
 }
 
-.card__image {
+.card__image__container {
     border-radius: 7px;
+    position: relative;
+    width: 100%;
 }
-
-.card__img-ethereum {}
 
 .card__offer {
     display: flex;
@@ -141,6 +141,10 @@ body {
     font-weight: 600;
 }
 
+.card__title:hover {
+    color: var(--cyan);
+}
+
 .card__days {
     display: flex;
     align-items: center;
@@ -172,3 +176,36 @@ body {
 .card__footer-text-2 {
     color: var(--white);
 }
+
+.card__footer-text-2:hover {
+    color: var(--cyan);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .card__image__container:hover .overlay {
+    opacity: 0.6;
+  }
+
+.card__hover__image {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
