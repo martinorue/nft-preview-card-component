@@ -1,12 +1,11 @@
-/*-------------------------------- RESET -----------------------------------*/
 *,
-*::before,
-*::after {
+::before,
+::after {
     box-sizing: border-box;
 }
 
 * {
-    margin: 0;
+    margin: 0px;
 }
 
 html,
@@ -50,15 +49,9 @@ h6 {
     isolation: isolate;
 }
 
-/*---------------------- END RESET -----------------------*/
-
-/*------------------- To work with rem more easy---------------------*/
-
 :root {
     font-size: 62.5%;
-  }
-  
-/*------------------------------------------------------------------*/
+}
 
 :root {
     --soft-blue: hsl(215, 51%, 70%);
@@ -70,7 +63,7 @@ h6 {
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: Outfit, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +84,9 @@ body {
     font-size: 1.8rem;
     font-weight: 300;
     color: var(--soft-blue);
-}.card__title {
+}
+
+.card__title {
     color: var(--white);
     font-weight: 600;
 }
@@ -108,14 +103,14 @@ body {
     border-radius: 7px;
 }
 
-.card__img-ethereum{}
+.card__img-ethereum {}
 
-.card__offer{
+.card__offer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--line);
-    padding-bottom: 10px;
+    padding-bottom: 13px;
 }
 
 .attribution {
@@ -124,7 +119,7 @@ body {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: rgb(62, 82, 163);
 }
 
 .card__price {
@@ -159,6 +154,7 @@ body {
     display: flex;
     font-size: 1.4rem;
     align-items: center;
+    padding-top: 7px;
 }
 
 .img__footer {
@@ -168,11 +164,11 @@ body {
     border-radius: 20px;
 }
 
-.card__footer-text-1{
+.card__footer-text-1 {
     color: var(--soft-blue);
     margin-right: 5px;
 }
 
-.card__footer-text-2{
+.card__footer-text-2 {
     color: var(--white);
 }
